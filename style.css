@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    background-color: hsl(235, 24%, 19%);
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-inline: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 110rem;
+}
+
+.container > *{
+flex: 1;
+}
+
+.left{
+    margin-right: 5rem;
+}
+
+.right{
+    margin-left: 5rem;
+}
+
+
+#create-account-form{
+    background-color: #fff;
+    color: #444;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.062);
+}
+.title h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 0.5rem;
+    position: relative;
+  
+}
+
+.input-group input{
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.input-group input:focus{
+    outline-color: none;
+    outline-width: 0;
+}
+
+.input-group i{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    visibility: hidden;
+}
+
+.input-group small{
+color: hsl(0, 87%, 54%);
+font-size: 1rem;
+position: relative;
+left: 1rem;
+visibility: hidden;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: hsl(154, 59%, 51%);
+    border-width: 0 0 3px 0;
+    border-radius: 0.5rem;
+    border-color: hsl(154, 59%, 75%);
+}
+
+.btn:active{
+    transform: translateY(2px);
+   
+}
+
+.btn:hover,
+.btn:focus-visible
+{
+    background-color: hsl(154, 59%, 60%);
+    cursor: pointer;
+    outline: none;
+}
+
+
+.success input{
+border: 1px solid hsl(154, 59%, 51%);
+}
+
+
+.success i.fa-circle-check{
+color:  hsl(154, 59%, 51%);
+visibility: visible;
+}
+    
+.error input{
+border: 1px solid hsl(0, 87%, 54%);
+}
+
+
+.error i.fa-circle-check{
+color: hsl(0, 87%, 54%);
+visibility: visible;
+}        
+
+
+.error small{
+visibility: visible;
+}
+
+.left{
+    align-self: center;
+}
+
+.left p{
+color:  #fff;
+font-size: 1.3rem;
+opacity: 0.8;
+max-width: 80ch;
+line-height: 2;
+}
+
+.left h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.top small {
+    opacity: 0.8;
+    font-weight: 100;
+}
+.top{
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.062);
+}
+
+
+@media (max-width: 800px){
+    .left {
+        text-align: center;
+        margin-right: 3rem;
+    }
+
+    
+    .left p{
+        margin-bottom: 4rem;
+        max-width: 40ch;
+        font-size: 1.1rem;
+     }
+     
+    .container{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .left h1{
+        font-size: 2.5rem;
+    }
+    
+.container{
+    display: flex;
+    flex-direction: row;   
+}
+
+    
+.right{
+    margin-left: 3rem;
+}
+
+.input-group small{
+    color: hsl(0, 87%, 54%);
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+    }
+
+}
+
+@media (max-width: 645px){
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .left p{
+       margin-bottom: 4rem;
+       font-size: 1.4rem;
+    }
+
+       
+.right{
+    margin-left: 0;
+}
+
+
+body{
+    margin: auto;
+    margin-block: 2rem;
+}
+
+
+#create-account-form{
+    width: 100%;
+}
+
+}
